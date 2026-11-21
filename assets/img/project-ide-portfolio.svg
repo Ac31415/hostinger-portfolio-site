@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171821" />
+      <stop offset="55%" stop-color="#1E1F29" />
+      <stop offset="100%" stop-color="#25212B" />
+    </linearGradient>
+    <radialGradient id="glowCoral" cx="85%" cy="18%" r="48%">
+      <stop offset="0%" stop-color="#f4623a" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#f4623a" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="15%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#BD93F9" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#BD93F9" stop-opacity="0" />
+    </radialGradient>
+    <filter id="winShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#090A10" flood-opacity="0.72" />
+    </filter>
+    <clipPath id="windowClip">
+      <rect x="110" y="68" width="1380" height="764" rx="16" />
+    </clipPath>
+  </defs>
+
+  <!-- Canvas Backdrop -->
+  <rect width="1600" height="900" fill="url(#bgGrad)" />
+  <rect width="1600" height="900" fill="url(#glowCoral)" />
+  <rect width="1600" height="900" fill="url(#glowPurple)" />
+
+  <!-- Subtle Dot Matrix -->
+  <g fill="#44475A" opacity="0.35">
+    <circle cx="80" cy="120" r="2" /><circle cx="160" cy="120" r="2" /><circle cx="1440" cy="120" r="2" /><circle cx="1520" cy="120" r="2" />
+    <circle cx="80" cy="450" r="2" /><circle cx="1520" cy="450" r="2" /><circle cx="80" cy="780" r="2" /><circle cx="1520" cy="780" r="2" />
+  </g>
+
+  <!-- IDE Window Shell -->
+  <g filter="url(#winShadow)">
+    <rect x="110" y="68" width="1380" height="764" rx="16" fill="#282A36" />
+  </g>
+
+  <g clip-path="url(#windowClip)">
+    <!-- Title Bar -->
+    <rect x="110" y="68" width="1380" height="46" fill="#21222C" />
+    <line x1="110" y1="114" x2="1490" y2="114" stroke="#191A21" stroke-width="1.5" />
+    <!-- Traffic Lights -->
+    <circle cx="140" cy="91" r="7" fill="#FF5F56" />
+    <circle cx="164" cy="91" r="7" fill="#FFBD2E" />
+    <circle cx="188" cy="91" r="7" fill="#27C93F" />
+    <!-- Search Pill in Title Bar -->
+    <rect x="520" y="77" width="560" height="28" rx="7" fill="#282A36" stroke="#44475A" stroke-width="1" />
+    <text x="800" y="96" text-anchor="middle" fill="#9BA1B8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="14">wen-chung-cheng — ac31415.github.io</text>
+
+    <!-- Left Activity Bar -->
+    <rect x="110" y="114" width="60" height="684" fill="#1E1F29" />
+    <line x1="170" y1="114" x2="170" y2="798" stroke="#191A21" stroke-width="1.5" />
+    <rect x="110" y="128" width="3" height="40" fill="#BD93F9" />
+    <!-- Explorer Icon -->
+    <rect x="128" y="136" width="24" height="24" rx="3" fill="none" stroke="#F8F8F2" stroke-width="2" />
+    <line x1="134" y1="143" x2="146" y2="143" stroke="#F8F8F2" stroke-width="2" />
+    <line x1="134" y1="150" x2="144" y2="150" stroke="#F8F8F2" stroke-width="2" />
+    <!-- Search Icon -->
+    <circle cx="139" cy="198" r="8" fill="none" stroke="#6272A4" stroke-width="2" />
+    <line x1="145" y1="204" x2="152" y2="211" stroke="#6272A4" stroke-width="2" stroke-linecap="round" />
+    <!-- Git Branch Icon -->
+    <circle cx="135" cy="250" r="3.5" fill="none" stroke="#6272A4" stroke-width="2" />
+    <circle cx="146" cy="264" r="3.5" fill="none" stroke="#6272A4" stroke-width="2" />
+    <path d="M135 253.5V264M135 257C135 257 146 257 146 260.5" fill="none" stroke="#6272A4" stroke-width="2" />
+
+    <!-- Explorer Sidebar -->
+    <rect x="170" y="114" width="265" height="684" fill="#21222C" />
+    <line x1="435" y1="114" x2="435" y2="798" stroke="#191A21" stroke-width="1.5" />
+    <text x="192" y="144" fill="#8B93B4" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">EXPLORER</text>
+    <text x="192" y="176" fill="#F8F8F2" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">PORTFOLIO / SRC</text>
+
+    <!-- Active File Row: about.md -->
+    <rect x="170" y="192" width="265" height="36" fill="#343746" />
+    <rect x="170" y="192" width="3" height="36" fill="#50FA7B" />
+    <text x="196" y="215" fill="#8BE9FD" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">MD</text>
+    <text x="230" y="215" fill="#F8F8F2" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">about.md</text>
+
+    <!-- Other Explorer Files -->
+    <text x="196" y="254" fill="#F1FA8C" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">{}</text>
+    <text x="230" y="254" fill="#BCC2D6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">experience.json</text>
+
+    <text x="196" y="292" fill="#FF79C6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">YML</text>
+    <text x="230" y="292" fill="#BCC2D6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">education.yml</text>
+
+    <text x="196" y="330" fill="#8BE9FD" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">TS</text>
+    <text x="230" y="330" fill="#BCC2D6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">skills.ts</text>
+
+    <text x="196" y="368" fill="#50FA7B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">TSX</text>
+    <text x="230" y="368" fill="#BCC2D6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">projects.tsx</text>
+
+    <text x="196" y="406" fill="#FFB86C" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">SH</text>
+    <text x="230" y="406" fill="#BCC2D6" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">contact.sh</text>
+
+    <!-- Sidebar Outline Card -->
+    <rect x="190" y="620" width="225" height="148" rx="8" fill="#282A36" stroke="#383B4E" stroke-width="1" />
+    <text x="208" y="648" fill="#8B93B4" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">METRICS</text>
+    <text x="208" y="678" fill="#50FA7B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">88.1%</text>
+    <text x="268" y="678" fill="#CBD0E3" font-family="system-ui, -apple-system, sans-serif" font-size="13">Sim2Real PPO</text>
+    <text x="208" y="708" fill="#FFB86C" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">14x</text>
+    <text x="268" y="708" fill="#CBD0E3" font-family="system-ui, -apple-system, sans-serif" font-size="13">DQN+DWA Gain</text>
+    <text x="208" y="738" fill="#BD93F9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">6+ yrs</text>
+    <text x="268" y="738" fill="#CBD0E3" font-family="system-ui, -apple-system, sans-serif" font-size="13">FAU EECS Lab</text>
+
+    <!-- Editor Tabs -->
+    <rect x="435" y="114" width="1055" height="44" fill="#21222C" />
+    <rect x="435" y="114" width="185" height="44" fill="#282A36" />
+    <rect x="435" y="114" width="185" height="2.5" fill="#FF79C6" />
+    <text x="462" y="141" fill="#8BE9FD" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">MD</text>
+    <text x="494" y="141" fill="#F8F8F2" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">about.md</text>
+    <text x="646" y="141" fill="#7D85A3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">projects.tsx</text>
+    <text x="790" y="141" fill="#7D85A3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">skills.ts</text>
+    <text x="904" y="141" fill="#7D85A3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">experience.json</text>
+
+    <!-- Code Editor Content Area -->
+    <rect x="435" y="158" width="1055" height="640" fill="#282A36" />
+    <!-- Active Line Highlight -->
+    <rect x="435" y="176" width="1055" height="36" fill="#323545" />
+
+    <!-- Line Numbers -->
+    <g fill="#6272A4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" text-anchor="end">
+      <text x="478" y="200">1</text>
+      <text x="478" y="236">2</text>
+      <text x="478" y="272">3</text>
+      <text x="478" y="308">4</text>
+      <text x="478" y="344">5</text>
+      <text x="478" y="380">6</text>
+      <text x="478" y="416">7</text>
+      <text x="478" y="452">8</text>
+      <text x="478" y="488">9</text>
+      <text x="478" y="524">10</text>
+      <text x="478" y="560">11</text>
+      <text x="478" y="596">12</text>
+      <text x="478" y="632">13</text>
+      <text x="478" y="668">14</text>
+      <text x="478" y="704">15</text>
+      <text x="478" y="740">16</text>
+    </g>
+
+    <!-- Syntax Highlighted Code -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17">
+      <text x="506" y="200" fill="#BD93F9" font-weight="700" font-size="22"># Wen-Chung Cheng</text>
+      <text x="506" y="236" fill="#F1FA8C" font-style="italic">Robotics &amp; Autonomous Systems Researcher</text>
+      <text x="954" y="236" fill="#6272A4"> · Delray Beach, FL · Ph.D. Candidate</text>
+      <text x="506" y="272" fill="#8BE9FD">&gt; Building heterogeneous multi-robot systems, sim-to-real navigation, &amp; VLA tooling.</text>
+      <text x="506" y="308" fill="#6272A4">&lt;!-- status: Ph.D. Candidate in CS · Florida Atlantic University --&gt;</text>
+
+      <text x="506" y="380" fill="#FF79C6" font-weight="700">## Research Focus</text>
+      <text x="506" y="416" fill="#F8F8F2">Ph.D. Candidate and Research &amp; Teaching Assistant in EECS at FAU (since 2019).</text>
+      <text x="506" y="452" fill="#F8F8F2">Working across ROS 2 Humble, Webots, Gazebo, Isaac Sim, MuJoCo, and TurtleBot3/4.</text>
+
+      <text x="506" y="524" fill="#FF79C6" font-weight="700">## Currently</text>
+      <text x="506" y="560" fill="#50FA7B">- </text><text x="528" y="560" fill="#F8F8F2">Collaborative Clearpath Moose + DJI Mavic 2 Pro multi-modal memory in Webots.</text>
+      <text x="506" y="596" fill="#50FA7B">- </text><text x="528" y="596" fill="#F8F8F2">Finetuned smolVLA, π₀, and π₀.₅ for deformable cable insertion.</text>
+      <text x="506" y="632" fill="#50FA7B">- </text><text x="528" y="632" fill="#F8F8F2">Agentic AI evaluation &amp; automated task-generation pipelines for STEM &amp; coding.</text>
+
+      <text x="506" y="704" fill="#FF79C6" font-weight="700">## Published Venues</text>
+      <text x="506" y="740" fill="#8BE9FD">| venue | work |</text>
+      <text x="720" y="740" fill="#FFB86C">MDPI Applied Sciences · SPIE · IEEE ICCR Best Oral</text>
+    </g>
+
+    <!-- Bottom Status Bar -->
+    <rect x="110" y="798" width="1380" height="34" fill="#191A21" />
+    <rect x="110" y="798" width="142" height="34" fill="#BD93F9" />
+    <text x="181" y="820" text-anchor="middle" fill="#191A21" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">ac31415.github.io</text>
+    <text x="276" y="820" fill="#50FA7B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">main*</text>
+    <text x="352" y="820" fill="#8B93B4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">0 errors · 0 warnings</text>
+    <text x="1458" y="820" text-anchor="end" fill="#8B93B4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">Markdown · UTF-8 · Ln 1, Col 1</text>
+  </g>
+</svg>
